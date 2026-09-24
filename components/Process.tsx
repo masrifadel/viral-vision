@@ -1,38 +1,32 @@
 const process = [
   {
-    title: "Audit",
-    description:
-      "We review your positioning, customer journey, and conversion gaps.",
+    title: "You sign",
+    description: "We agree on scope and start date.",
   },
   {
-    title: "Plan",
-    description:
-      "We shape the message, site structure, and acquisition strategy around your goals.",
+    title: "You share your info",
+    description: "A short questionnaire, plus your logo and photos.",
   },
   {
-    title: "Build",
-    description:
-      "We design and develop a site that looks credible and works hard for enquiries.",
+    title: "We design",
+    description: "Our designers build your pages.",
   },
   {
-    title: "Optimise",
-    description:
-      "We refine SEO, ad targeting, and page flow to improve lead quality and volume.",
+    title: "You review",
+    description: "Send changes and we revise.",
   },
   {
-    title: "Grow",
-    description:
-      "We keep the system moving with reporting, updates, and strategic improvements.",
+    title: "We test and launch",
+    description: "Your site goes live and traffic work begins.",
   },
 ];
 
 export function Process() {
   return (
     <section className="wrap sec" id="process">
-      <h2>A simple process built around momentum.</h2>
+      <h2>How a new website comes together</h2>
       <p className="sub">
-        From clarity to conversion, every step is designed to keep the growth
-        engine moving.
+        A simple, repeatable process, so you always know what happens next.
       </p>
 
       <ol className="steps">

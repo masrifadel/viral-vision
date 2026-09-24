@@ -276,6 +276,14 @@ main {
   margin-bottom: 22px;
 }
 
+.hero-copy {
+  order: 2;
+}
+
+.hero .vid {
+  order: 1;
+}
+
 .hero .lead {
   color: var(--fg-soft);
   max-width: 34em;
@@ -1051,6 +1059,11 @@ footer .wrap {
     grid-template-columns: 1fr;
     gap: 36px;
     padding-bottom: 72px;
+  }
+
+  .hero-copy,
+  .hero .vid {
+    order: initial;
   }
 
   .svc {

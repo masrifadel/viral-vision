@@ -1,39 +1,49 @@
 const packages = [
   {
-    title: "Launch",
-    subtitle: "For newer businesses wanting a sharper first impression",
-    price: "$1,200",
-    note: "one-time setup",
+    title: "Digital Foundation",
+    subtitle: "For businesses with weak online marketing.",
+    price: "Starting from $1,250",
+    note: "per month",
     items: [
-      "Up to 5 custom pages",
-      "Responsive design",
-      "Basic SEO setup",
-      "Lead capture form",
+      "Website maintenance",
+      "Google Business Profile management",
+      "Local SEO",
+      "About 12 social posts a month",
+      "Basic graphic design",
+      "Review strategy",
+      "Monthly reporting",
     ],
   },
   {
     title: "Growth",
-    subtitle: "For businesses ready to scale visibility and leads",
-    price: "$2,500",
-    note: "monthly retainers available",
+    subtitle: "Paid ads on top of a solid foundation.",
+    price: "Starting from $2,250",
+    note: "per month, plus ad spend",
     items: [
-      "Everything in Launch",
-      "Local SEO & page optimisation",
-      "Landing page funnel strategy",
-      "Ongoing content direction",
+      "Google Ads management",
+      "Meta Ads management",
+      "Landing pages",
+      "Conversion tracking",
+      "Call and lead tracking",
+      "More social content",
+      "SEO content",
+      "Monthly strategy call",
     ],
     featured: true,
   },
   {
-    title: "Momentum",
-    subtitle: "For businesses that want strategic growth support",
-    price: "$4,000",
-    note: "monthly growth system",
+    title: "Outsourced Marketing Department",
+    subtitle: "Replaces several in-house marketing hires.",
+    price: "Starting from $4,000",
+    note: "per month, plus ad spend",
     items: [
-      "Everything in Growth",
-      "Google and Meta ad setup",
-      "Analytics and reporting",
-      "Conversion optimisation",
+      "Website management and SEO",
+      "Google Ads and Meta Ads",
+      "Social media, graphics and video editing",
+      "Email and SMS marketing",
+      "CRM and automations",
+      "Landing pages and reporting",
+      "Dedicated account manager",
     ],
   },
 ];
@@ -42,9 +52,10 @@ export function Packages() {
   return (
     <section className="paper sec" id="packages">
       <div className="wrap">
-        <h2>Flexible packages for steady growth.</h2>
+        <h2>Three packages, no menu of 25 services</h2>
         <p className="sub">
-          Choose the level that fits your current stage and growth goals.
+          Choose the level that fits where your marketing is today. Ad spend is
+          paid separately, straight to Google or Meta.
         </p>
 
         <div className="packs">
@@ -53,7 +64,9 @@ export function Packages() {
               key={pkg.title}
               className={`pk ${pkg.featured ? "main" : ""}`}
             >
-              {pkg.featured && <span className="badge">Most popular</span>}
+              {pkg.featured && (
+                <span className="badge">Best fit for most businesses</span>
+              )}
               <h3>{pkg.title}</h3>
               <p className="who">{pkg.subtitle}</p>
               <div className="price">
@@ -71,11 +84,12 @@ export function Packages() {
 
         <div className="only">
           <p>
-            <b>Need a custom plan?</b> We also build tailored growth systems for
-            multi-location or high-intent service businesses.
+            <b>Just need a website?</b>
+            <br />A one-time website is $2,500. When it is live, you can move to
+            a monthly growth plan to start bringing in traffic and leads.
           </p>
           <a className="btn" href="#contact">
-            Talk to us
+            Ask about a website
           </a>
         </div>
       </div>

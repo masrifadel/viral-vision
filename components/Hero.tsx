@@ -123,23 +123,23 @@ export function Hero() {
 
       <section className="wrap hero" id="top" aria-label="Introduction">
         <div className="hero-copy">
-          <h1>
-            Websites, SEO and ads built to turn attention into local revenue.
-          </h1>
+          <h1>More calls for your local business</h1>
           <p className="lead">
-            Viral Vision helps service businesses look credible, rank locally,
-            and convert more visitors into real leads with websites, search
-            visibility, and ad campaigns designed around business growth.
+            Viral Vision builds your website, gets you found on Google, and
+            runs your social media and ad campaigns, all from one team.
           </p>
           <div className="row">
             <a className="btn solid" href="#contact">
-              Book a strategy call
+              Get in touch
             </a>
             <a className="btn" href="#packages">
               See packages
             </a>
           </div>
-          <small>Friendly strategy • sharp design • measurable growth</small>
+          <small>
+            For roofers, plumbers, movers, lawyers and other local U.S.
+            businesses.
+          </small>
         </div>
 
         <div className="vid" id="vid">

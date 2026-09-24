@@ -5,38 +5,62 @@ import { useState } from "react";
 const services = [
   {
     id: "websites",
-    title: "Web design & development",
+    title: "Website design",
     description:
-      "Modern, conversion-focused websites that make your business look premium, clearer, and easier to trust from the first click.",
+      "Fast, mobile-first, and built around one job: getting people to request a quote.",
     bullets: [
-      "Custom brand-led design",
-      "Mobile-first responsive layouts",
-      "Clear conversion paths",
-      "Fast page performance",
+      "New WordPress or Shopify site",
+      "Landing pages and quote or booking forms",
+      "Analytics and Search Console setup",
+      "Speed, maintenance, hosting and domain help",
     ],
   },
   {
-    id: "seo",
-    title: "SEO & local visibility",
+    id: "social",
+    title: "Social media",
     description:
-      "Search strategy that targets the people actively looking for your service so you show up where it matters most.",
+      "Instagram and Facebook, with TikTok added when it fits. You send raw photos and video; we turn them into polished posts.",
     bullets: [
-      "Local SEO optimisation",
-      "Google Business Profile guidance",
-      "Service-page structure",
-      "Ongoing keyword growth",
+      "Content calendar, captions and hashtags",
+      "Graphic design, Reels and Stories",
+      "Scheduling and comment monitoring",
+      "Monthly analytics",
     ],
   },
   {
-    id: "ads",
-    title: "Paid ads & funnels",
+    id: "local-seo",
+    title: "Google and local SEO",
     description:
-      "Campaigns built to create steady lead flow without wasting spend, with landing pages that turn traffic into enquiries.",
+      'When someone searches "plumber near me", we make sure it is your listing and your pages they find.',
     bullets: [
-      "Meta and Google campaigns",
-      "Landing page testing",
-      "Lead tracking & quality control",
-      "Ad creative strategy",
+      "Google Business Profile optimization",
+      "Location and service pages, on-page SEO",
+      "Citations, reviews strategy and backlinks",
+      "Rank tracking and monthly reports",
+    ],
+  },
+  {
+    id: "google-ads",
+    title: "Google Ads",
+    description:
+      "Every dollar is tracked to a call or a form, so you can see what your ad spend brings back.",
+    bullets: [
+      "Keyword research and campaign builds",
+      "Ad copy, negative keywords, local targeting",
+      "Conversion and call tracking",
+      "Landing pages, A/B tests and reporting",
+    ],
+  },
+  {
+    id: "meta-ads",
+    title: "Meta Ads",
+    description:
+      "Facebook and Instagram ads that find the people most likely to need you, then follow up with the ones who did not call yet.",
+    bullets: [
+      "Audience targeting and retargeting",
+      "Creative, video ads and lead forms",
+      "Pixel and Conversions API setup",
+      "Testing and ongoing optimization",
     ],
   },
 ];
@@ -46,10 +70,10 @@ export function Services() {
 
   return (
     <section className="wrap sec" id="services">
-      <h2>Strategy, design, and growth systems for local businesses.</h2>
+      <h2>Five services, one team</h2>
       <p className="sub">
-        We help businesses turn their expertise into stronger visibility,
-        sharper messaging, and more consistent leads.
+        Pick one, or let us run all of them together. Tap a service to see what
+        we handle.
       </p>
 
       <div className="svc">

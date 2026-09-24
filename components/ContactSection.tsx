@@ -3,12 +3,10 @@ export function ContactSection() {
     <section className="contact sec" id="contact">
       <div className="wrap cgrid">
         <div>
-          <h2>
-            Ready to make your business easier to find and easier to trust?
-          </h2>
+          <h2>Tell us about your business</h2>
           <p className="sub">
-            Tell us what you want to improve — your website, SEO, paid ads, or
-            overall lead flow. We’ll map out the next step.
+            Share what you do and where you work. We&apos;ll reply with a plan
+            that fits your goals and budget.
           </p>
         </div>
 
@@ -23,11 +21,15 @@ export function ContactSection() {
             </label>
             <label>
               Business name
-              <input type="text" name="business" placeholder="Business name" />
+              <input type="text" name="business" required autoComplete="organization" />
             </label>
           </div>
 
           <div className="tworow">
+            <label>
+              Phone
+              <input type="tel" name="phone" autoComplete="tel" />
+            </label>
             <label>
               Email
               <input
@@ -38,27 +40,26 @@ export function ContactSection() {
               />
             </label>
             <label>
-              Service needed
+              What do you need?
               <select name="service">
-                <option value="Website">Website</option>
-                <option value="SEO">SEO</option>
-                <option value="Paid ads">Paid ads</option>
-                <option value="Full growth system">Full growth system</option>
+                <option>A new website</option>
+                <option>Local SEO</option>
+                <option>Social media</option>
+                <option>Google or Meta Ads</option>
+                <option>Full marketing package</option>
               </select>
             </label>
           </div>
 
           <label>
-            Project details
+            Anything else we should know?
             <textarea
               name="message"
-              placeholder="Tell us about your goals, timeline, and current challenges."
-              required
             />
           </label>
 
           <button className="btn solid" type="submit">
-            Send enquiry
+            Send message
           </button>
         </form>
         <br />
@@ -66,10 +67,13 @@ export function ContactSection() {
 
       <footer>
         <div className="wrap">
-          <span>© 2026 Viral Vision</span>
-          <span>
-            Helping local businesses grow with clarity and consistency.
-          </span>
+          <a className="brand" href="#top" aria-label="Viral Vision home">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <use href="#vmark" />
+            </svg>
+            <span>VIRAL VISION</span>
+          </a>
+          <span>From Vision to Viral</span>
         </div>
       </footer>
     </section>
