@@ -1,26 +1,41 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const siteUrl = "https://viralvision.example";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://viralvision.example"),
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: "Viral Vision | Websites, SEO and ads for local businesses",
     template: "%s | Viral Vision",
   },
   description:
-    "Viral Vision builds high-converting websites, SEO growth, and paid ad campaigns for local businesses that want more leads and visibility.",
+    "Viral Vision builds conversion-focused websites, local SEO strategies, and paid ad campaigns for service businesses that want more visibility and qualified leads.",
   keywords: [
     "local business website",
     "SEO for local business",
     "paid ads management",
     "digital marketing agency",
     "website design",
+    "service business marketing",
+    "web design for local business",
   ],
+  applicationName: "Viral Vision",
+  authors: [{ name: "Viral Vision" }],
+  creator: "Viral Vision",
+  publisher: "Viral Vision",
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "Viral Vision | Websites, SEO and ads for local businesses",
     description:
-      "Turn your business into a local growth engine with conversion-driven websites, search visibility, and ad campaigns.",
-    url: "https://viralvision.example",
+      "Turn your business into a local growth engine with conversion-focused websites, search visibility, and ad campaigns.",
+    url: siteUrl,
     siteName: "Viral Vision",
     locale: "en_US",
     type: "website",
