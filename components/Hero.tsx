@@ -143,6 +143,10 @@ export function Hero() {
         </div>
 
         <div className="vid" id="vid">
+          <div className="motion-label" aria-label="Animated preview">
+            <span aria-hidden="true" />
+            Animated preview
+          </div>
           <div
             ref={sceneRef}
             className="stage"

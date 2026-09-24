@@ -212,6 +212,43 @@ main {
   pointer-events: none;
 }
 
+.motion-label {
+  position: absolute;
+  z-index: 3;
+  top: 12px;
+  left: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px;
+  border: 1px solid rgba(236, 214, 168, 0.55);
+  border-radius: 999px;
+  background: rgba(15, 44, 33, 0.78);
+  color: var(--gold-hi);
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  backdrop-filter: blur(6px);
+}
+
+.motion-label span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold-hi);
+  box-shadow: 0 0 0 0 rgba(236, 214, 168, 0.75);
+  animation: motion-pulse 1.8s infinite;
+}
+
+@keyframes motion-pulse {
+  70% {
+    box-shadow: 0 0 0 6px rgba(236, 214, 168, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(236, 214, 168, 0);
+  }
+}
+
 .cap {
   position: absolute;
   left: 18px;
