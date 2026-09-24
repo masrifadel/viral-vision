@@ -1104,6 +1104,10 @@ footer .wrap {
     order: initial;
   }
 
+  .hero .vid {
+    order: -1;
+  }
+
   .svc {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -1130,6 +1134,10 @@ footer .wrap {
 
   .panel {
     grid-template-columns: 1fr;
+  }
+
+  .panel .ill {
+    order: -1;
   }
 
   .packs {
