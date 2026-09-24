@@ -738,6 +738,7 @@ main {
   position: relative;
   overflow: hidden;
   border-block: 1px solid var(--gold-lo);
+  padding: 88px 0;
 }
 
 .math::before {
@@ -1144,6 +1145,10 @@ footer .wrap {
 
   .sec {
     padding: 72px 0;
+  }
+
+  .math {
+    padding: 68px 0;
   }
 }
 
